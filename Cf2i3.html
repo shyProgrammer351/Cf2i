@@ -1,136 +1,178 @@
-<html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script type="text/javascript" src="../Js0C1f/C0203.js"></script> 	</head> 	<body onload='sP3f1();' onkeydown='sP3f4()' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> C 프로그래밍 </div> 			<div id = "navigationBox"><ol><li><a href='../Cf1i/Cf1i1.html'>출력</a></li><li><a href='../Cf2i/Cf2i1.html'>입력</a></li><ul><li><a href='../Cf2i/Cf2i1.html'>챗봇 대화</a></li><li><a href='../Cf2i/Cf2i2.html'>음식 주문</a></li><li><a href='../Cf2i/Cf2i3.html'>스포츠 뉴스</a></li><ul><li><a href='Cf2i3.html'>코드읽기</a></li><li><a href='Cf2i3a.html'>알고리즘</a></li><li><a href='Cf2i3k.html'>키워드</a></li><li><a href='Cf2i3b.html'>빈칸채우기</a></li><li><a href='Cf2i3s.html'>실행순서</a></li><li><a href='Cf2i3m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/C/blob/main/Chapter02/SportsNews.c' target='code'>소스코드</a></li></ul><li><a href='../Cf2i/Cf2i4.html'>바다</a></li><li><a href='../Cf2i/Cf2i5.html'>캐릭터 한 칸 이동</a></li></ul><li><a href='../Cf3i/Cf3i1.html'>변수/연산자</a></li><li><a href='../Cf4i/Cf4i1.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Cf5i/Cf5i1.html'>선택문(if)</a></li><li><a href='../Cf6i/Cf6i1.html'>반복문(while)</a></li><li><a href='../Cf7i/Cf7i1.html'>반복문(for)</a></li><li><a href='../Cf8i/Cf8i1.html'>배열</a></li><li><a href='../Cf9i/Cf9i1.html'>문자열</a></li><li><a href='../Cg0i/Cg0i1.html'>함수</a></li><li><a href='../Cg1i/Cg1i1.html'>포인터</a></li><li><a href='../Cg2i/Cg2i1.html'>파일입출력</a></li><li><a href='../Cg3i/Cg3i1.html'>구조체/열거형/동적할당</a></li><li><a href='../Cg4i/Cg4i1.html'>함수자료전달</a></li><li><a href='../Cg5i/Cg5i1.html'>전처리기/파일분할</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>사용자가 야구 경기 정보를 입력하면 그 결과를 바탕으로 스포츠 뉴스를 출력하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 <br>관련신문기사 - http://news1.kr/articles/?2246990</pre> 				<pre class='selectable'>경기일자 : <b><font color='red'>15</font></b>
-승리팀 : <b><font color='red'>롯데</font></b>
-패배팀 : <b><font color='red'>KT</font></b>
-승리점수 : <b><font color='red'>10</font></b>
-패배점수 : <b><font color='red'>1</font></b>
-승리팀 선발투수 : <b><font color='red'>김승회</font></b>
-패배팀 선발투수 : <b><font color='red'>정대현</font></b>
-승리팀 맹활약 선수 : <b><font color='red'>정훈</font></b>
-맹활약 시점 : <b><font color='red'>6회초1아웃</font></b>
-맹활약 시 뽑아낸 점수 : <b><font color='red'>2</font></b>
-공략못한 선수 :<b><font color='red'>박진형</font></b>
-KT는 15일 열린 프로야구 롯데와의 홈 경기에서 1 - 10점으로 크게 패하며 
-홈 팬들을 실망시켰습니다. KT는 정대현을 선발로 등판시켰고 롯데는 김승회가 나섰습니다. 
-롯데는 정훈이 맹활약을 펼쳤습니다. 정훈은 6회초1아웃에 맞이한 타석에서 2점을 뽑아내며, 
-롯데의 9점차 승리를 이끈 일등공신이 됐습니다. KT는 박진형을 끝까지 공략하지 못하며 
-안방에서 롯데에 9점차 승리를 내주었습니다.
-</pre><br><pre class='selectable'>경기일자 : <b><font color='red'>18</font></b>
-승리팀 : <b><font color='red'>한화</font></b>
-패배팀 : <b><font color='red'>SK</font></b>
-승리점수 : <b><font color='red'>8</font></b>
-패배점수 : <b><font color='red'>4</font></b>
-승리팀 선발투수 : <b><font color='red'>정우람</font></b>
-패배팀 선발투수 : <b><font color='red'>문승원</font></b>
-승리팀 맹활약 선수 : <b><font color='red'>강경학</font></b>
-맹활약 시점 : <b><font color='red'>6회초1아웃</font></b>
-맹활약 시 뽑아낸 점수 : <b><font color='red'>3</font></b>
-공략못한 선수 : <b><font color='red'>김재영</font></b>
-SK는 18일 열린 프로야구 한화와의 홈 경기에서 4 - 8점으로 크게 패하며 
-홈 팬들을 실망시켰습니다. SK는 문승원을 선발로 등판시켰고 한화는 정우람가 나섰습니다. 
-한화는 강경학이 맹활약을 펼쳤습니다. 강경학은 6회초1아웃에 맞이한 타석에서 3점을 뽑아내며, 
-한화의 4점차 승리를 이끈 일등공신이 됐습니다. SK는 김재영을 끝까지 공략하지 못하며 
-안방에서 한화에 4점차 승리를 내주었습니다.
-</pre><br><pre class='selectable'>경기일자 : <b><font color='red'>21</font></b>
-승리팀 : <b><font color='red'>LG</font></b>
-패배팀 : <b><font color='red'>KIA</font></b>
-승리점수 : <b><font color='red'>6</font></b>
-패배점수 : <b><font color='red'>1</font></b>
-승리팀 선발투수 : <b><font color='red'>오석주</font></b>
-패배팀 선발투수 : <b><font color='red'>강이준</font></b>
-승리팀 맹활약 선수 : <b><font color='red'>양원혁</font></b>
-맹활약 시점 : <b><font color='red'>2회초2아웃</font></b>
-맹활약 시 뽑아낸 점수 : <b><font color='red'>2</font></b>
-공략못한 선수 : <b><font color='red'>오지환</font></b>
-KIA는 21일 열린 프로야구 LG와의 홈 경기에서 1 - 6점으로 크게 패하며 
-홈 팬들을 실망시켰습니다. KIA는 강이준을 선발로 등판시켰고 LG는 오석주가 나섰습니다. 
-LG는 양원혁이 맹활약을 펼쳤습니다. 양원혁은 2회초2아웃에 맞이한 타석에서 2점을 뽑아내며, 
-LG의 5점차 승리를 이끈 일등공신이 됐습니다. KIA는 오지환을 끝까지 공략하지 못하며 
-안방에서 LG에 5점차 승리를 내주었습니다.
-</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램시작 <br>&nbsp; &nbsp;주요 경기 내용을 입력 <br>&nbsp; &nbsp;입력된 주요 경기 내용을 바탕으로 스포츠 신문기사 자동 생성 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='sP3f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter02/SportsNews.c</font>
-</pre><pre id="code0" class="unselectable codeClass">	#<font color='red' title="헤더파일(.h) 내용을 소스코드(.c)에 포함하는 명령문">include</font> <<font color='red' title="표준입출력 관련 함수 정보를 가지고 있는 헤더파일">stdio.h</font>>
+<html> 	<head> 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7250753558435816" crossorigin="anonymous"></script> 		<link rel="stylesheet" href="../layout.css"> 		<script type="text/javascript" src="../functions.js"></script> 		<script type="text/javascript" src="../Js0C1f/C0203.js"></script> 	</head> 	<body onkeydown='sP3f4();' oncontextmenu="return false" onselectstart="return false" oncopy="return false" oncut="return false" onpaste="return false" draggable="false" ondragstart="return false" ondrop="return false"> 		<div id = "container"> 			<div id = "titleBox"> C 프로그래밍 </div> 			<div id = "navigationBox"><ol start=0><li><a href='../Cf0i/Cf0i0.html'>C 프로그래밍 시작</a></li><li><a href='../Cf1i/Cf1i0.html'>출력</a></li><li><a href='../Cf2i/Cf2i0.html'>입력</a></li><ul><li><a href='../Cf2i/Cf2i1.html'>챗봇 대화</a></li><li><a href='../Cf2i/Cf2i2.html'>음식 주문</a></li><li><a href='../Cf2i/Cf2i3.html'>날씨 뉴스</a></li><ul><li><a href='Cf2i3.html'>코드읽기</a></li><li><a href='Cf2i3a.html'>알고리즘</a></li><li><a href='Cf2i3k.html'>키워드</a></li><li><a href='Cf2i3b.html'>빈칸채우기</a></li><li><a href='Cf2i3s.html'>실행순서</a></li><li><a href='Cf2i3m.html'>실행상태</a></li><li><a href='https://github.com/CodeReading101/C/blob/main/Chapter02/WeatherNews.c' target='code'>소스코드</a></li></ul><li><a href='../Cf2i/Cf2i4.html'>바다</a></li><li><a href='../Cf2i/Cf2i5.html'>생일 축하</a></li></ul><li><a href='../Cf3i/Cf3i0.html'>변수</a></li><li><a href='../Cf4i/Cf4i0.html'>연산자</a></li><li><a href='../Cf5i/Cf5i0.html'>선택문(삼항연산자/switch)</a></li><li><a href='../Cf6i/Cf6i0.html'>선택문(if)</a></li><li><a href='../Cf7i/Cf7i0.html'>반복문(while)</a></li><li><a href='../Cf8i/Cf8i0.html'>반복문(for)</a></li><li><a href='../Cf9i/Cf9i0.html'>배열</a></li><li><a href='../Cg0i/Cg0i0.html'>문자열</a></li><li><a href='../Cg1i/Cg1i0.html'>함수</a></li><li><a href='../Cg2i/Cg2i0.html'>재귀함수</a></li><li><a href='../Cg3i/Cg3i0.html'>포인터</a></li><li><a href='../Cg4i/Cg4i0.html'>파일입출력</a></li><li><a href='../Cg5i/Cg5i0.html'>열거형/구조체/동적할당</a></li><li><a href='../Cg6i/Cg6i0.html'>함수 자료 전달</a></li><li><a href='../Cg7i/Cg7i0.html'>전처리/파일분할</a></li></ol></div>  			<div id = "contentBox"> 				<h4>문제</h4> 				<pre style='white-space:normal;'>사용자가 날씨 정보를 입력하면 그 결과를 바탕으로 날씨 뉴스를 생성하는 문제입니다 이를 해결하는 다음 프로그램을 해석하세요 <br>관련신문기사 - http://news.kmib.co.kr/article/view.asp?arcid=0013032800&code=61121611&cp=nv</pre> 				<pre class='selectable'>오늘의 기상특보는 무엇인가요: <b><span style='color:rgb(255,0,0);'>대설특보</span></b>
+오늘의 주의사항은 무엇인가요: <b><span style='color:rgb(255,0,0);'>눈길</span></b>
+오늘은 무슨 요일인가요: <b><span style='color:rgb(255,0,0);'>목</span></b>
+오늘은 몇 월인가요: <b><span style='color:rgb(255,0,0);'>1</span></b>
+오늘은 몇 일인가요: <b><span style='color:rgb(255,0,0);'>31</span></b>
+서울 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-4</span></b>
+춘천 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-4</span></b>
+대전 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-1</span></b>
+광주 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>0</span></b>
+부산 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>4</span></b>
+제주 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>4</span></b>
+서울 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>1</span></b>
+춘천 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>3</span></b>
+대전 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>2</span></b>
+광주 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>2</span></b>
+부산 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>4</span></b>
+제주 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>5</span></b>
+1월 31일 목요일, 아침 날씨입니다.
+아침 최저기온은 서울 -4도, 춘천 -4도, 대전 -1도, 광주 0도, 부산 4도, 제주 4도로 예상됩니다.
+낮 최고기온은 서울 1도, 춘천 3도, 대전 2도, 광주 2도, 부산 4도, 제주 5도로 예상됩니다.
+일부 지방에 대설특보가 발효중입니다. 출근길 눈길 운전에 유의해야 합니다.
+이상 날씨였습니다. 
+</pre><br><pre class='selectable'>오늘의 기상특보는 무엇인가요: <b><span style='color:rgb(255,0,0);'>호우특보</span></b>
+오늘의 주의사항은 무엇인가요: <b><span style='color:rgb(255,0,0);'>빗길</span></b>
+오늘은 무슨 요일인가요: <b><span style='color:rgb(255,0,0);'>금</span></b>
+오늘은 몇 월인가요: <b><span style='color:rgb(255,0,0);'>6</span></b>
+오늘은 몇 일인가요: <b><span style='color:rgb(255,0,0);'>29</span></b>
+서울 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>21</span></b>
+춘천 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>21</span></b>
+대전 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>23</span></b>
+광주 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>23</span></b>
+부산 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>22</span></b>
+제주 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>21</span></b>
+서울 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>29</span></b>
+춘천 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>30</span></b>
+대전 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>31</span></b>
+광주 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>31</span></b>
+부산 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>26</span></b>
+제주 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>28</span></b>
+6월 29일 금요일, 아침 날씨입니다.
+아침 최저기온은 서울 21도, 춘천 21도, 대전 23도, 광주 23도, 부산 22도, 제주 21도로 예상됩니다.
+낮 최고기온은 서울 29도, 춘천 30도, 대전 31도, 광주 31도, 부산 26도, 제주 28도로 예상됩니다.
+일부 지방에 호우특보가 발효중입니다. 출근길 빗길 운전에 유의해야 합니다.
+이상 날씨였습니다. 
+</pre><br><pre class='selectable'>오늘의 기상특보는 무엇인가요: <b><span style='color:rgb(255,0,0);'>강풍주의보</span></b>
+오늘의 주의사항은 무엇인가요: <b><span style='color:rgb(255,0,0);'>안전</span></b>
+오늘은 무슨 요일인가요: <b><span style='color:rgb(255,0,0);'>목</span></b>
+오늘은 몇 월인가요: <b><span style='color:rgb(255,0,0);'>1</span></b>
+오늘은 몇 일인가요: <b><span style='color:rgb(255,0,0);'>3</span></b>
+서울 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-8</span></b>
+춘천 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-14</span></b>
+대전 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-7</span></b>
+광주 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-4</span></b>
+부산 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-2</span></b>
+제주 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>2</span></b>
+서울 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>2</span></b>
+춘천 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>2</span></b>
+대전 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>4</span></b>
+광주 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>7</span></b>
+부산 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>8</span></b>
+제주 최고기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>7</span></b>
+1월 3일 목요일, 아침 날씨입니다.
+아침 최저기온은 서울 -8도, 춘천 -14도, 대전 -7도, 광주 -4도, 부산 -2도, 제주 2도로 예상됩니다.
+낮 최고기온은 서울 2도, 춘천 2도, 대전 4도, 광주 7도, 부산 8도, 제주 7도로 예상됩니다.
+일부 지방에 강풍주의보가 발효중입니다. 출근길 안전 운전에 유의해야 합니다.
+이상 날씨였습니다. 
+</pre><br> 	  				<h4>알고리즘</h4> 				<pre style='white-space:normal;'>프로그램 시작 <br>&nbsp; &nbsp;주요 날씨 내용을 입력 <br>&nbsp; &nbsp;날씨 정보를 바탕으로 기상 뉴스를 자동으로 생성 <br>프로그램 종료 <br></pre> 		 				<br><h4>프로그램 코드 <input id='btn' type='button' value='실행순서 및 메모리상태 확인' onclick='sP3f5();'/></h4>  				<div id = "codeBox"><pre id="code0" class="unselectable codeClass">	<font color="green">// 파일명 : ./Chapter02/WeatherNews.c</font>
+</pre><pre id="code0" class="unselectable codeClass">	#<a href='../Cf1i/Cf1i0.html' target='keyword'>include</a> &lt;<a href='../Cf1i/Cf1i0.html' target='keyword'>stdio.h</a>&gt;
 </pre><pre id="code0" class="unselectable codeClass">	 
-</pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 프로그램시작 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">	<font color="green">//<b> 프로그램 시작 </b></font>
 </pre>
-<pre id="code1" class="unselectable codeClass">1	int <font color='red' title="프로그램을 시작할 때 운영체제가 호출하는 함수">main</font>() {
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">// 경기 내용을 저장하는 변수 초기화</font>
-</pre><pre id="code0" class="unselectable codeClass">		char date[16] = "";
-</pre><pre id="code0" class="unselectable codeClass">		char winningTeam[16] = "";
-</pre><pre id="code0" class="unselectable codeClass">		char losingTeam[16] = "";
-</pre><pre id="code0" class="unselectable codeClass">		int  winningPoint = 0;
-</pre><pre id="code0" class="unselectable codeClass">		int  losingPoint = 0;
-</pre><pre id="code0" class="unselectable codeClass">		char losingPitcher[16] = "";
-</pre><pre id="code0" class="unselectable codeClass">		char winningPitcher[16] = "";
-</pre><pre id="code0" class="unselectable codeClass">		char bestPlayer[16] = "";
-</pre><pre id="code0" class="unselectable codeClass">		char bestPoint[16] = "";
-</pre><pre id="code0" class="unselectable codeClass">		int  bestPointScore = 0;
+<pre id="code1" class="unselectable codeClass">1	int <a href='../Cf1i/Cf1i0.html' target='keyword'>main</a>() {
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 주요 날씨 내용을 입력 </b></font>
 </pre>
-<pre id="code2" class="unselectable codeClass">2		char missedPlayer[16] = "";
+<pre id="code2" class="unselectable codeClass">2		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "오늘은 몇 월인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int month = 0;
+</pre>
+<pre id="code3" class="unselectable codeClass">3		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &month );
+</pre>
+<pre id="code4" class="unselectable codeClass">4		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "오늘은 몇 일인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int day = 0;
+</pre>
+<pre id="code5" class="unselectable codeClass">5		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &day );
+</pre>
+<pre id="code6" class="unselectable codeClass">6		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "오늘은 무슨 요일인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		char week[16] = "";
+</pre>
+<pre id="code7" class="unselectable codeClass">7		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%s</a>", week );
+</pre>
+<pre id="code8" class="unselectable codeClass">8		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "오늘의 기상특보는 무엇인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		char weatherReport[16] = "";
+</pre>
+<pre id="code9" class="unselectable codeClass">9		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%s</a>", weatherReport );
+</pre>
+<pre id="code10" class="unselectable codeClass">10		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "오늘의 주의사항은 무엇인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		char precaution[16] = "";
+</pre>
+<pre id="code11" class="unselectable codeClass">11		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%s</a>", precaution );
+</pre>
+<pre id="code12" class="unselectable codeClass">12		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "서울 최저기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int lowSeoul = 0;
+</pre>
+<pre id="code13" class="unselectable codeClass">13		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &lowSeoul );
+</pre>
+<pre id="code14" class="unselectable codeClass">14		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "춘천 최저기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int lowChuncheon = 0;
+</pre>
+<pre id="code15" class="unselectable codeClass">15		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &lowChuncheon );
+</pre>
+<pre id="code16" class="unselectable codeClass">16		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "대전 최저기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int lowDaejeon = 0;
+</pre>
+<pre id="code17" class="unselectable codeClass">17		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &lowDaejeon );
+</pre>
+<pre id="code18" class="unselectable codeClass">18		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "광주 최저기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int lowGwangju = 0;
+</pre>
+<pre id="code19" class="unselectable codeClass">19		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &lowGwangju );
+</pre>
+<pre id="code20" class="unselectable codeClass">20		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "부산 최저기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int lowBusan = 0;
+</pre>
+<pre id="code21" class="unselectable codeClass">21		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &lowBusan );
+</pre>
+<pre id="code22" class="unselectable codeClass">22		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "제주 최저기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int lowJeju = 0;
+</pre>
+<pre id="code23" class="unselectable codeClass">23		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &lowJeju );
+</pre>
+<pre id="code24" class="unselectable codeClass">24		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "서울 최고기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int highSeoul = 0;
+</pre>
+<pre id="code25" class="unselectable codeClass">25		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &highSeoul );
+</pre>
+<pre id="code26" class="unselectable codeClass">26		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "춘천 최고기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int highChuncheon = 0;
+</pre>
+<pre id="code27" class="unselectable codeClass">27		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &highChuncheon );
+</pre>
+<pre id="code28" class="unselectable codeClass">28		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "대전 최고기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int highDaejeon = 0;
+</pre>
+<pre id="code29" class="unselectable codeClass">29		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &highDaejeon );
+</pre>
+<pre id="code30" class="unselectable codeClass">30		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "광주 최고기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int highGwangju = 0;
+</pre>
+<pre id="code31" class="unselectable codeClass">31		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &highGwangju );
+</pre>
+<pre id="code32" class="unselectable codeClass">32		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "부산 최고기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int highBusan = 0;
+</pre>
+<pre id="code33" class="unselectable codeClass">33		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &highBusan );
+</pre>
+<pre id="code34" class="unselectable codeClass">34		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "제주 최고기온은 몇 도인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int highJeju = 0;
+</pre>
+<pre id="code35" class="unselectable codeClass">35		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>scanf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>", &highJeju );
 </pre><pre id="code0" class="unselectable codeClass">		 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 주요 경기 내용을 입력 </b></font>
+</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 날씨 정보를 바탕으로 기상 뉴스를 자동으로 생성 </b></font>
 </pre>
-<pre id="code3" class="unselectable codeClass">3		<font color='red' title="출력 함수">printf</font>( "경기일자 : " );
+<pre id="code36" class="unselectable codeClass">36		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "<a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>월 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>일 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%s</a>요일, 아침 날씨입니다.\n", month, day, week );
 </pre>
-<pre id="code4" class="unselectable codeClass">4		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="문자열 형식으로 입출력">%s</font>", date );
+<pre id="code37" class="unselectable codeClass">37		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "아침 최저기온은 서울 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도, 춘천 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도, 대전 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도, 광주 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도, 부산 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도, 제주 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도로 예상됩니다.\n",
+</pre><pre id="code0" class="unselectable codeClass">			  lowSeoul, lowChuncheon, lowDaejeon, lowGwangju, lowBusan, lowJeju );
 </pre>
-<pre id="code5" class="unselectable codeClass">5		<font color='red' title="출력 함수">printf</font>( "\n승리팀 : " );
+<pre id="code38" class="unselectable codeClass">38		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "낮 최고기온은 서울 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도, 춘천 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도, 대전 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도, 광주 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도, 부산 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도, 제주 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%d</a>도로 예상됩니다.\n",
+</pre><pre id="code0" class="unselectable codeClass">			  highSeoul, highChuncheon, highDaejeon, highGwangju, highBusan, highJeju );
 </pre>
-<pre id="code6" class="unselectable codeClass">6		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="문자열 형식으로 입출력">%s</font>", winningTeam );
+<pre id="code39" class="unselectable codeClass">39		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "일부 지방에 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%s</a>가 발효중입니다. 출근길 <a href='../Cf2i/Cf2i0.html#2' target='keyword'>%s</a> 운전에 유의해야 합니다.\n", weatherReport, precaution );
 </pre>
-<pre id="code7" class="unselectable codeClass">7		<font color='red' title="출력 함수">printf</font>( "패배팀 : " );
-</pre>
-<pre id="code8" class="unselectable codeClass">8		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="문자열 형식으로 입출력">%s</font>", losingTeam );
-</pre>
-<pre id="code9" class="unselectable codeClass">9		<font color='red' title="출력 함수">printf</font>( "\n승리점수 : " );
-</pre>
-<pre id="code10" class="unselectable codeClass">10		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="정수 형식으로 입출력">%d</font>", &winningPoint );
-</pre>
-<pre id="code11" class="unselectable codeClass">11		<font color='red' title="출력 함수">printf</font>( "패배점수 : " );
-</pre>
-<pre id="code12" class="unselectable codeClass">12		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="정수 형식으로 입출력">%d</font>", &losingPoint );
-</pre>
-<pre id="code13" class="unselectable codeClass">13		<font color='red' title="출력 함수">printf</font>( "\n승리팀 선발투수 : " );
-</pre>
-<pre id="code14" class="unselectable codeClass">14		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="문자열 형식으로 입출력">%s</font>", winningPitcher );
-</pre>
-<pre id="code15" class="unselectable codeClass">15		<font color='red' title="출력 함수">printf</font>( "패배팀 선발투수 : " );
-</pre>
-<pre id="code16" class="unselectable codeClass">16		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="문자열 형식으로 입출력">%s</font>", losingPitcher );
-</pre>
-<pre id="code17" class="unselectable codeClass">17		<font color='red' title="출력 함수">printf</font>( "\n승리팀 맹활약 선수 : " );
-</pre>
-<pre id="code18" class="unselectable codeClass">18		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="문자열 형식으로 입출력">%s</font>", bestPlayer );
-</pre>
-<pre id="code19" class="unselectable codeClass">19		<font color='red' title="출력 함수">printf</font>( "맹활약 시점 : " );
-</pre>
-<pre id="code20" class="unselectable codeClass">20		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="문자열 형식으로 입출력">%s</font>", bestPoint );
-</pre>
-<pre id="code21" class="unselectable codeClass">21		<font color='red' title="출력 함수">printf</font>( "맹활약 시 뽑아낸 점수 : " );
-</pre>
-<pre id="code22" class="unselectable codeClass">22		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="정수 형식으로 입출력">%d</font>", &bestPointScore );
-</pre>
-<pre id="code23" class="unselectable codeClass">23		<font color='red' title="출력 함수">printf</font>( "공략못한 선수 : " );
-</pre>
-<pre id="code24" class="unselectable codeClass">24		<font color='red' title="입력 함수">scanf</font>( "<font color='red' title="문자열 형식으로 입출력">%s</font>", missedPlayer );
-</pre><pre id="code0" class="unselectable codeClass">		 
-</pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 입력된 주요 경기 내용을 바탕으로 스포츠 신문기사 자동 생성 </b></font>
-</pre>
-<pre id="code25" class="unselectable codeClass">25		<font color='red' title="출력 함수">printf</font>( "\n\n<font color='red' title="문자열 형식으로 입출력">%s</font>는 <font color='red' title="문자열 형식으로 입출력">%s</font>일 열린 프로야구 <font color='red' title="문자열 형식으로 입출력">%s</font>와의 홈 경기에서 <font color='red' title="정수 형식으로 입출력">%d</font> - <font color='red' title="정수 형식으로 입출력">%d</font>점으로 크게 패하며 ",
-</pre><pre id="code0" class="unselectable codeClass">		  losingTeam, date, winningTeam, losingPoint, winningPoint );
-</pre>
-<pre id="code26" class="unselectable codeClass">26		<font color='red' title="출력 함수">printf</font>( "홈 팬들을 실망시켰습니다. <font color='red' title="문자열 형식으로 입출력">%s</font>는 <font color='red' title="문자열 형식으로 입출력">%s</font>을 선발로 등판시켰고 <font color='red' title="문자열 형식으로 입출력">%s</font>는 <font color='red' title="문자열 형식으로 입출력">%s</font>가 나섰습니다. ",
-</pre><pre id="code0" class="unselectable codeClass">		  losingTeam, losingPitcher, winningTeam, winningPitcher );
-</pre>
-<pre id="code27" class="unselectable codeClass">27		<font color='red' title="출력 함수">printf</font>( "<font color='red' title="문자열 형식으로 입출력">%s</font>는 <font color='red' title="문자열 형식으로 입출력">%s</font>이 맹활약을 펼쳤습니다. <font color='red' title="문자열 형식으로 입출력">%s</font>은 <font color='red' title="문자열 형식으로 입출력">%s</font>에 맞이한 타석에서 <font color='red' title="정수 형식으로 입출력">%d</font>점을 뽑아내며, ",
-</pre><pre id="code0" class="unselectable codeClass">		  winningTeam, bestPlayer, bestPlayer, bestPoint, bestPointScore );
-</pre>
-<pre id="code28" class="unselectable codeClass">28		<font color='red' title="출력 함수">printf</font>( "<font color='red' title="문자열 형식으로 입출력">%s</font>의 <font color='red' title="정수 형식으로 입출력">%d</font>점차 승리를 이끈 일등공신이 됐습니다. <font color='red' title="문자열 형식으로 입출력">%s</font>는 <font color='red' title="문자열 형식으로 입출력">%s</font>을 끝까지 공략하지 못하며 ",
-</pre><pre id="code0" class="unselectable codeClass">		  winningTeam, ( winningPoint - losingPoint ), losingTeam, missedPlayer );
-</pre>
-<pre id="code29" class="unselectable codeClass">29		<font color='red' title="출력 함수">printf</font>( "안방에서 <font color='red' title="문자열 형식으로 입출력">%s</font>에 <font color='red' title="정수 형식으로 입출력">%d</font>점차 승리를 내주었습니다.",
-</pre><pre id="code0" class="unselectable codeClass">		  winningTeam, ( winningPoint - losingPoint ) );
+<pre id="code40" class="unselectable codeClass">40		<a href='../Cf2i/Cf2i0.html#2' target='keyword'>printf</a>( "이상 날씨였습니다." );
 </pre><pre id="code0" class="unselectable codeClass">	 
 </pre><pre id="code0" class="unselectable codeClass">		<font color="green">//<b> 프로그램 종료 </b></font>
 </pre>
-<pre id="code30" class="unselectable codeClass">30		<font color='red' title="함수 종료시 실행흐름이 함수를 호출했던 곳으로 되돌아가는 명령문">return</font> 0;
+<pre id="code41" class="unselectable codeClass">41		<a href='../Cf1i/Cf1i0.html' target='keyword'>return</a> 0;
 </pre><pre id="code0" class="unselectable codeClass">	}
-</pre></div>	 	 				<br><h4>키워드 설명</h4> 				<pre id = "sP3d3" style='white-space:normal;'></pre> 			 				<h4>실행 순서</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전) 및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br> 			</div> 			<div id = "floatingBox"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:155px;width:852px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
+</pre></div>	 	 				<br><h4>실행 순서</h4> 				<pre id = "sP3d4" style='white-space:normal; width:800px;'> </pre> 				<pre style='white-space:normal;'> 					※ 실행순서 및 메모리상태는 A키(이전) 및 D키(다음)를 눌러도 확인할 수 있습니다  				</pre> 				<br><br><br><br><br><br><br><br> &nbsp;  			</div> 			<div id = "floatingBox" style = "top:200px;left:900px;margin:0px;padding:0px;"> 				<pre id = "outputBox" class ="outputBox" style = "color:White;height:215px;width:748px;padding:10px;margin:0px;"></pre>  				<div id = "intermediateResult"> 					<img id = "sP3d7"> 					<table style = "border-spacing:0px;margin:0px;table-layout:auto;"> 						<tbody id = "sP3d8"></tbody> 					</table> 				</div> 			</div> 		</div> 	</body> </html> 
