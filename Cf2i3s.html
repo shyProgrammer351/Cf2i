@@ -23,21 +23,21 @@
 </pre><br>  	 				<h4>프로그램 코드</h4> 				<pre></pre><pre id="code0" class="unselectable codeClass">	#include &lt;stdio.h&gt;
 
 </pre><pre id="code1" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('1')">1	int main() {
-</pre><pre id="code2" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('2')">2		printf( "오늘은 몇 월인가요: " );
-</pre><pre id="code0" class="unselectable codeClass">		int month = 0;
-</pre><pre id="code3" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('3')">3		scanf( "%d", &month );
-</pre><pre id="code4" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('4')">4		printf( "오늘은 몇 일인가요: " );
-</pre><pre id="code0" class="unselectable codeClass">		int day = 0;
-</pre><pre id="code5" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('5')">5		scanf( "%d", &day );
+</pre><pre id="code2" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('2')">2		printf( "오늘의 기상특보는 무엇인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		char weatherReport[16] = "";
+</pre><pre id="code3" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('3')">3		scanf( "%s", weatherReport );
+</pre><pre id="code4" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('4')">4		printf( "오늘의 주의사항은 무엇인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		char precaution[16] = "";
+</pre><pre id="code5" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('5')">5		scanf( "%s", precaution );
 </pre><pre id="code6" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('6')">6		printf( "오늘은 무슨 요일인가요: " );
 </pre><pre id="code0" class="unselectable codeClass">		char week[16] = "";
 </pre><pre id="code7" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('7')">7		scanf( "%s", week );
-</pre><pre id="code8" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('8')">8		printf( "오늘의 기상특보는 무엇인가요: " );
-</pre><pre id="code0" class="unselectable codeClass">		char weatherReport[16] = "";
-</pre><pre id="code9" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('9')">9		scanf( "%s", weatherReport );
-</pre><pre id="code10" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('10')">10		printf( "오늘의 주의사항은 무엇인가요: " );
-</pre><pre id="code0" class="unselectable codeClass">		char precaution[16] = "";
-</pre><pre id="code11" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('11')">11		scanf( "%s", precaution );
+</pre><pre id="code8" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('8')">8		printf( "오늘은 몇 월인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int month = 0;
+</pre><pre id="code9" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('9')">9		scanf( "%d", &month );
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('10')">10		printf( "오늘은 몇 일인가요: " );
+</pre><pre id="code0" class="unselectable codeClass">		int day = 0;
+</pre><pre id="code11" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('11')">11		scanf( "%d", &day );
 </pre><pre id="code12" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('12')">12		printf( "서울 최저기온은 몇 도인가요: " );
 </pre><pre id="code0" class="unselectable codeClass">		int lowSeoul = 0;
 </pre><pre id="code13" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('13')">13		scanf( "%d", &lowSeoul );
