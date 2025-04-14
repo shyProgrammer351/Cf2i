@@ -2,7 +2,7 @@
 오늘의 주의사항은 무엇인가요: <b><span style='color:rgb(255,0,0);'>눈길</span></b>
 오늘은 무슨 요일인가요: <b><span style='color:rgb(255,0,0);'>목</span></b>
 오늘은 몇 월인가요: <b><span style='color:rgb(255,0,0);'>1</span></b>
-오늘은 몇 일인가요: <b><span style='color:rgb(255,0,0);'>31</span></b>
+오늘은 며칠인가요: <b><span style='color:rgb(255,0,0);'>31</span></b>
 서울 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-4</span></b>
 춘천 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-4</span></b>
 대전 최저기온은 몇 도인가요: <b><span style='color:rgb(255,0,0);'>-1</span></b>
@@ -35,7 +35,7 @@
 </pre><pre id="code8" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('8')">8		printf( "오늘은 몇 월인가요: " );
 </pre><pre id="code0" class="unselectable codeClass">		int month = 0;
 </pre><pre id="code9" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('9')">9		scanf( "%d", &month );
-</pre><pre id="code10" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('10')">10		printf( "오늘은 몇 일인가요: " );
+</pre><pre id="code10" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('10')">10		printf( "오늘은 며칠인가요: " );
 </pre><pre id="code0" class="unselectable codeClass">		int day = 0;
 </pre><pre id="code11" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('11')">11		scanf( "%d", &day );
 </pre><pre id="code12" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('12')">12		printf( "서울 최저기온은 몇 도인가요: " );
@@ -75,12 +75,12 @@
 </pre><pre id="code0" class="unselectable codeClass">		int highJeju = 0;
 </pre><pre id="code35" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('35')">35		scanf( "%d", &highJeju );
 </pre><pre id="code0" class="unselectable codeClass">		
-</pre><pre id="code36" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('36')">36		printf( "%d월 %d일 %s요일, 아침 날씨입니다.\n", month, day, week );
-</pre><pre id="code37" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('37')">37		printf( "아침 최저기온은 서울 %d도, 춘천 %d도, 대전 %d도, 광주 %d도, 부산 %d도, 제주 %d도로 예상됩니다.\n",
+</pre><pre id="code36" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('36')">36		printf( "%d월 %d일 %s요일, 아침 날씨입니다. \n", month, day, week );
+</pre><pre id="code37" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('37')">37		printf( "아침 최저기온은 서울 %d도, 춘천 %d도, 대전 %d도, 광주 %d도, 부산 %d도, 제주 %d도로 예상됩니다. \n",
 </pre><pre id="code0" class="unselectable codeClass">			  lowSeoul, lowChuncheon, lowDaejeon, lowGwangju, lowBusan, lowJeju );
-</pre><pre id="code38" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('38')">38		printf( "낮 최고기온은 서울 %d도, 춘천 %d도, 대전 %d도, 광주 %d도, 부산 %d도, 제주 %d도로 예상됩니다.\n",
+</pre><pre id="code38" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('38')">38		printf( "낮 최고기온은 서울 %d도, 춘천 %d도, 대전 %d도, 광주 %d도, 부산 %d도, 제주 %d도로 예상됩니다. \n",
 </pre><pre id="code0" class="unselectable codeClass">			  highSeoul, highChuncheon, highDaejeon, highGwangju, highBusan, highJeju );
-</pre><pre id="code39" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('39')">39		printf( "일부 지방에 %s가 발효중입니다. 출근길 %s 운전에 유의해야 합니다.\n", weatherReport, precaution );
+</pre><pre id="code39" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('39')">39		printf( "일부 지방에 %s가 발효중입니다. 출근길 %s 운전에 유의해야 합니다. \n", weatherReport, precaution );
 </pre><pre id="code40" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('40')">40		printf( "이상 날씨였습니다." );
 
 </pre><pre id="code41" class="unselectable codeClass" onmouseover="sP3f8(this.id, true) " onmouseout="sP3f8(this.id, false)" onclick="sP3f7('41')">41		return 0;
